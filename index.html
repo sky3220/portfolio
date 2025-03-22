@@ -1,0 +1,317 @@
+<!-- ./assets/Adidas.MOV -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .video-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: transform 0.3s ease;
+            /* Adjusted for portrait orientation */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-container {
+            /* Container for the video to control proportions */
+            width: 100%;
+            /* Adjusted aspect ratio for portrait videos */
+            padding-top: 177.78%;
+            /* 9:16 aspect ratio */
+            position: relative;
+        }
+
+        .video-item video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-info {
+            padding: 1rem;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .video-description {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .links-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .links-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .links-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .link-item {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .video-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .links-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Creative Portfolio</h1>
+        <p class="description">Welcome to my portfolio showcasing a collection of my best work. Browse through the
+            videos below to see examples of my projects and creativity.</p>
+    </header>
+
+    <section class="video-gallery">
+        <!-- Video 1 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/Adidas.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Adidas Running Game</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/HitUpMonster.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Hit-Up-Monster</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/Javelin.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Javelin</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/OreoTwoPlayer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">OreoTwoPlayer</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/Retrorace.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Retro-Rage</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/ShoppingLens.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Shopping-lens</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/BgSegment.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Background Segmentation</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/Sting.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">Sting</h3>
+                <p class="video-description">.</p>
+            </div>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="video-item">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="./assets/swvl.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title">SWVL</h3>
+                <p class="video-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="links-section">
+        <h2 class="links-title">Explore</h2>
+        <div class="links-container">
+            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=5c864d2455664c3e8cd98a5dc6cd8632&metadata=01"
+                class="link-item">Taco Challenge</a>
+            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=c687d1b2f657462d999fef7b23bcd87f&metadata=01"
+                class="link-item">Hurdle-Jump</a>
+            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d616ceede0544b7089d95b8739ee6bb5&metadata=01"
+                class="link-item">3D-Apparel-Exp</a>
+            <a href="https://www.snapchat.com/lens/44b3e4b2885e4400a6886706be975e44?type=SNAPCODE&metadata=01"
+                class="link-item">HitUpMonster</a>
+            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=faabcd15db3a4a259ac686095d952b32&metadata=01"
+                class="link-item">Retro-Rage</a>
+            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=4e4602add18c43bc85834404914f1481&metadata=01"
+                class="link-item">RamadanOfRadiance</a>
+            <a href="https://newsfeedsmartapp.com/Javelin/" class="link-item">Javelin</a>
+            <a href="https://newsfeedsmartapp.com/SWVLGame/ " class="link-item">Game</a>
+
+        </div>
+    </section>
+
+    <footer>
+        <!-- <p>&copy; 2025 Creative Portfolio. All rights reserved.</p> -->
+    </footer>
+</body>
+
+</html>
